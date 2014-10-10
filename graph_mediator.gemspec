@@ -23,11 +23,14 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files spec/*`.split("\n")
 
-  s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
-  s.add_development_dependency(%q<diff-lcs>)
-  s.add_development_dependency(%q<sqlite3>)
-  s.add_runtime_dependency(%q<activerecord>, [">= 2.3.6", "< 3.0.0"])
-  s.add_runtime_dependency(%q<activesupport>, [">= 2.3.6", "< 3.0.0"])
-  s.add_runtime_dependency(%q<aasm>, [">= 2.2.0"])
+  s.add_development_dependency(%q<rspec>, ["~> 1.3"])
+	s.add_development_dependency(%q<diff-lcs>)
+	s.add_development_dependency(%q<sqlite3>)
+	s.add_development_dependency(%q<pry>)
+	s.add_development_dependency(%q<pry-doc>)
+	s.add_development_dependency(%q<activesupport>, ["~> 3.2.17"])
+	s.add_runtime_dependency(%q<activerecord>, ["~> 3.2.17"])
+	s.add_runtime_dependency(%q<activesupport>, ["~> 3.2.17"])
+s.add_runtime_dependency(%q<aasm>, ["2.2.0"])
 end
 
